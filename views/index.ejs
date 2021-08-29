@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container mt-5" style="border: 3px solid;" align="center">
+        <u><h1>Page1</h1></u>
+        <%  page_1.forEach(function(usrs){   %>
+            <h3><%= usrs.email %></h3>
+        <%  }); %>
+        <h5 style="color: red;">Total Users are <%= page_1.length %></h5>
+    </div>
+    
+
+    <footer style="margin-top: 200px;">
+        <div class="container d-flex justify-content-center">
+            <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="/second">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="/second">Next</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </footer>
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>
